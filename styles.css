@@ -1,25 +1,39 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Fundo preto */
+    color: white; /* Texto branco */
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.container {
     text-align: center;
 }
 
-.chart-container {
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
+/* Container Centralizado */
+.container {
+    padding: 20px;
 }
 
-h1 {
-    margin-bottom: 20px;
+/* Estilo do Botão */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #70093c; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #4682b4;
 }

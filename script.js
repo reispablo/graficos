@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     ticks: { color: 'white' }
                 },
                 x: {
-                    ticks: { color: 'white' }
+                    ticks: { color: 'white', padding: 10 } // Adiciona espaço entre o rótulo e os dados
                 }
             }
         }
