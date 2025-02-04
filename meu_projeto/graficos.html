@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos de Produtos Automatizados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-buttons">
+        <a href="index.html" class="btn">Home</a>
+        <a href="graficos.html" class="btn">Gráficos</a>
+        <a href="zephyr.html" class="btn">Zephyr</a>
+        <a href="automacao.html" class="btn">Automação</a>
+        <a href="equipe.html" class="btn">Equipe</a>
+    </div>
+
+    <div class="container">
+        <h1>Gráficos de Produtos Automatizados</h1>
+        
+        <div class="charts-wrapper">
+            <div class="chart-container">
+                <canvas id="columnChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="script.js"></script>
+</body>
+</html>
