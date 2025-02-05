@@ -3,10 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zephyr</title>
+    <title>Zephyr - Equipes</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .header-buttons {
+            margin-bottom: 20px; /* Adiciona espaço abaixo da barra de navegação */
+        }
+
+        .container {
+            padding-top: 250px; /* Adiciona espaço acima da container para evitar sobreposição */
+            margin-top: 10cm; /* Desloca a container 10 cm para baixo */
+        }
+
+        .team-sections-wrapper {
+            display: flex;
+            flex-wrap: wrap; /* Permite que as seções sejam flexíveis e quebrem linha se necessário */
+            gap: 20px; /* Adiciona espaço entre as seções */
+        }
+
+        .team-section {
+            flex: 1 1 calc(50% - 20px); /* Define a largura das seções para metade do contêiner */
+            box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total */
+            padding: 10px;
+            border: 1px solid #0a0a0a;
+            background-color: #0e0e0e;
+        }
+
+        .pdf-container {
+            width: 100%;
+            height: 500px; /* Ajuste a altura conforme necessário */
+            margin-top: 20px;
+        }
+
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove a borda do iframe */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <!-- Barra de Navegação -->
     <div class="header-buttons">
         <a href="index.html" class="btn">Home</a>
         <a href="graficos.html" class="btn">Gráficos</a>
@@ -17,14 +64,47 @@
 
     <div class="container">
         <h1>Resultados Zephyr Último Período</h1>
-        
-        <p>Abaixo você pode visualizar o PDF com as informações sobre o Zephyr:</p>
+        <p>Selecione uma equipe para visualizar o relatório.</p>
 
-        <div class="pdf-container">
-            <iframe src="Zephyr Scale - Jira.pdf"></iframe>
+        <!-- Wrapper para as seções -->
+        <div class="team-sections-wrapper">
+            <!-- Seção para cada equipe -->
+            <div class="team-section">
+                <h2>Equipe Mobile</h2>
+                <p>Relatório de testes da equipe Mobile.</p>
+                <div class="pdf-container">
+                    <iframe src="Mobile.pdf"></iframe>
+                </div>
+                <a href="Mobile.pdf" class="btn download-btn" download>Baixar PDF</a>
+            </div>
+
+            <div class="team-section">
+                <h2>Equipe TNT</h2>
+                <p>Relatório de testes da equipe TNT.</p>
+                <div class="pdf-container">
+                    <iframe src="TNT.pdf"></iframe>
+                </div>
+                <a href="TNT.pdf" class="btn download-btn" download>Baixar PDF</a>
+            </div>
+
+            <div class="team-section">
+                <h2>Equipe ONN</h2>
+                <p>Relatório de testes da equipe ONN.</p>
+                <div class="pdf-container">
+                    <iframe src="ONN.pdf"></iframe>
+                </div>
+                <a href="ONN.pdf" class="btn download-btn" download>Baixar PDF</a>
+            </div>
+
+            <div class="team-section">
+                <h2>Equipe PREV</h2>
+                <p>Relatório de testes da equipe PREV.</p>
+                <div class="pdf-container">
+                    <iframe src="PREV.pdf"></iframe>
+                </div>
+                <a href="PREV.pdf" class="btn download-btn" download>Baixar PDF</a>
+            </div>
         </div>
-
-        <a href="Zephyr Scale - Jira.pdf" class="btn download-btn" download>📥 Baixar PDF</a>
     </div>
 </body>
 </html>

@@ -56,7 +56,7 @@ html, body {
 }
 
 .container {
-    padding: 120px 20px 20px;
+    padding: 160px 20px 20px; /* Aumentado de 120px para 160px */
     width: 100%;
     max-width: 1200px;
     text-align: center;
@@ -101,6 +101,10 @@ h1 {
 
 .download-btn {
     margin-top: 20px;
+}
+
+.team-section {
+    padding-top: 80px; /* Ajuste para evitar sobreposição com a barra fixa */
 }
 
 @media (max-width: 768px) {
